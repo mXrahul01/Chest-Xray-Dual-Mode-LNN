@@ -1,4 +1,154 @@
-Filename,Model 1 Prediction,Model 1 Confidence,Model 2 Prediction,Model 2 Confidence,Final Prediction
-PNEUMONIA_person138_bacteria_657.jpeg,Normal,0.7133910059928894,Lung Opacity,0.6560637354850769,Normal (Confidence: 0.71)
-PNEUMONIA_person14_virus_44.jpeg,Pneumonia,0.5511398911476135,Normal,0.7234027981758118,Normal (Confidence: 0.72)
-PNEUMONIA_person16_virus_47.jpeg,Normal,0.9773371815681458,Normal,0.8256863355636597,Normal (Confidence: 0.98)
+Filename,Model1 Prediction,Model1 Confidence,Model2 Prediction,Model2 Confidence,Final Prediction,Final Confidence,Risk Tier
+ce6933ab48224505b6644938713f2040_Mixed_Data_1010.jpg,Normal,0.9837,Lung Opacity,0.9471,Normal,0.9837,Normal
+a3900906981c49ec99912eebc0ed18f2_Mixed_Data_1014.jpg,Normal,0.9972,Normal,0.7990,Normal,0.9972,Normal
+9e6225c9061147d48ceb8416a05f8587_Mixed_Data_102.jpg,Normal,0.9999,Normal,0.7075,Normal,0.9999,Normal
+b7e640b6775d4a3c8f8fd409ba0ae4b5_Mixed_Data_1021.jpg,Normal,0.9989,Lung Opacity,0.5204,Normal,0.9989,Normal
+4cc1578bd71446af8fabecb7e7cfc407_Mixed_Data_1023.jpg,Normal,0.9590,Lung Opacity,0.5667,Normal,0.9590,Normal
+5d5fb74b26c749b8b03e379c989cee0c_Mixed_Data_1027.jpg,Normal,1.0000,Normal,0.9672,Normal,1.0000,Normal
+ff7dbe101be342cb8532b6c0cb2fdea8_Mixed_Data_1029.jpg,Normal,0.9986,Normal,0.6258,Normal,0.9986,Normal
+03e98cd189d642dd967f03eb32d19fd6_Mixed_Data_1031.jpg,Normal,0.9999,Normal,0.9513,Normal,0.9999,Normal
+44e58edd4ecf4a8d89d0904cb93d7f99_Mixed_Data_1036.jpg,Normal,0.9972,Lung Opacity,0.9034,Normal,0.9972,Normal
+70cbd67557b0457f8696fe14248cade0_Mixed_Data_1037.jpg,Normal,0.9833,Lung Opacity,0.9748,Normal,0.9833,Normal
+80d40597785f40f494973dc92636e538_Mixed_Data_1041.jpg,Normal,0.9928,Lung Opacity,0.9558,Normal,0.9928,Normal
+219184f0091f439aaea0eab338df23ee_Mixed_Data_1044.jpg,Normal,0.9986,Lung Opacity,0.9276,Normal,0.9986,Normal
+29661656c5924f6d988eb282e2967afb_Mixed_Data_1045.jpg,Normal,0.9951,Lung Opacity,0.9269,Normal,0.9951,Normal
+7b9b74db1a8849cd8f2812da2d2c629a_Mixed_Data_1051.jpg,Normal,0.9916,Lung Opacity,0.6721,Normal,0.9916,Normal
+4c58a977cb084bb7b061a4af23b2abbf_Mixed_Data_1052.jpg,Normal,0.9559,Normal,0.5731,Normal,0.9559,Normal
+41dfe14ffb814f31bb872cb27f8c8b3f_Mixed_Data_1069.jpg,Normal,0.9991,Lung Opacity,0.7257,Normal,0.9991,Normal
+966298b514324e38924a571309f514c6_Mixed_Data_1071.jpg,Normal,0.9731,Lung Opacity,0.8515,Normal,0.9731,Normal
+22a786ccebfc4ab99aa501967296ed61_Mixed_Data_1075.jpg,Normal,1.0000,Normal,0.9898,Normal,1.0000,Normal
+3d798d8b43184547a9aca605e9ad6d64_Mixed_Data_1082.jpg,Normal,0.9997,Normal,0.8650,Normal,0.9997,Normal
+a27301b432dc4c1fa315689645b54b77_Mixed_Data_1090.jpg,Pneumonia,0.5708,Normal,0.7365,Normal,0.7365,Normal
+4f6b647cb22d4c3ea56d0212e0717999_Mixed_Data_1091.jpg,Normal,1.0000,Normal,0.8991,Normal,1.0000,Normal
+8235a3d82b0c408e9af3ea9b1e01ffed_Mixed_Data_1094.jpg,Normal,0.6483,Normal,0.8469,Normal,0.8469,Normal
+3a9c3ccc3bb44c86a3b49607100b5aa8_Mixed_Data_1102.jpg,Normal,1.0000,Normal,0.8530,Normal,1.0000,Normal
+74841575c72242d4bd73bf523662b3c2_Mixed_Data_1120.jpg,Normal,1.0000,Normal,0.9395,Normal,1.0000,Normal
+33fa1613533d407b8cbadceff314a116_Mixed_Data_1123.jpg,Normal,0.9981,Lung Opacity,0.7732,Normal,0.9981,Normal
+635dc698d95949f7840cde22fd1ec7a9_Mixed_Data_1125.jpg,Normal,0.9930,Lung Opacity,0.9854,Normal,0.9930,Normal
+c65be9b4476a48eab11bd21a08da9d26_Mixed_Data_113.jpg,Normal,1.0000,Lung Opacity,0.7179,Normal,1.0000,Normal
+1addbb8ecf80466abaec454650abd9f3_Mixed_Data_1130.jpg,Normal,0.9998,Normal,0.8001,Normal,0.9998,Normal
+8624056308074c0dbf4cafa45e9045df_Mixed_Data_1138.jpg,Normal,0.9999,Lung Opacity,0.5708,Normal,0.9999,Normal
+b55718b5ff704198bf853197ae559166_Mixed_Data_1140.jpg,Normal,1.0000,Normal,0.9718,Normal,1.0000,Normal
+2362d2c9d34242f2b2ccd14cc773eb86_Mixed_Data_1143.jpg,Normal,1.0000,Normal,0.9514,Normal,1.0000,Normal
+76427072c76b4690ac1edd0aabd9d094_Mixed_Data_1146.jpg,Normal,1.0000,Normal,0.9298,Normal,1.0000,Normal
+a76a14e8ab2d4cdbbd6f29022b61cf69_Mixed_Data_1167.jpg,Normal,0.9999,Normal,0.7089,Normal,0.9999,Normal
+5ce2d17cab6c4e8fb2e2e8b69966871a_Mixed_Data_1180.jpg,Normal,0.9998,Normal,0.9715,Normal,0.9998,Normal
+81d593f60a4a488da83a35e42dabf841_Mixed_Data_1183.jpg,Normal,1.0000,Normal,0.9891,Normal,1.0000,Normal
+d95c824b5f6c4d94a18134e6f05da577_Mixed_Data_1184.jpg,Normal,0.8903,Lung Opacity,0.8734,Normal,0.8903,Normal
+5c8d4278dbe040a9bb01a98af3381a04_Mixed_Data_1185.jpg,Normal,0.9999,Normal,0.9123,Normal,0.9999,Normal
+9c5e7496e5c144a290ba3ee3db8f1742_Mixed_Data_1230.jpg,Normal,0.9267,Lung Opacity,0.5070,Normal,0.9267,Normal
+f80b7e2d231b4c219fd901c4e7b2263b_Mixed_Data_1236.jpg,Normal,1.0000,Normal,0.9296,Normal,1.0000,Normal
+f510523cdf29447d8fe642141292794c_Mixed_Data_1242.jpg,Normal,0.9967,Lung Opacity,0.6467,Normal,0.9967,Normal
+92217b342a82429c93335ea6cc00cfd8_Mixed_Data_1244.jpg,Normal,0.9997,Normal,0.6878,Normal,0.9997,Normal
+3e3e4252f8c94db3be4354a549943a49_Mixed_Data_174.jpg,Normal,0.9900,Lung Opacity,0.8637,Normal,0.9900,Normal
+8ad84df4574d43feab165a6985a4c468_Mixed_Data_177.jpg,Normal,0.9999,Lung Opacity,0.9508,Normal,0.9999,Normal
+d750956de9314c48ba63b687f6be18bd_Mixed_Data_19.jpg,Normal,0.9998,Normal,0.8509,Normal,0.9998,Normal
+94bc35641c9747daaa8f3ba46755a5f9_Mixed_Data_190.jpg,Normal,0.9999,Lung Opacity,0.8892,Normal,0.9999,Normal
+6e894628a3704b8886ab16a2d069d0f2_Mixed_Data_194.jpg,Normal,0.9987,Lung Opacity,0.6936,Normal,0.9987,Normal
+021945ad81714348bc8bea7bd25e685d_Mixed_Data_239.jpg,Normal,0.9593,Normal,0.6124,Normal,0.9593,Normal
+401ccebaacd14cd497f262ef89cf8929_Mixed_Data_240.jpg,Normal,0.8993,Lung Opacity,0.6659,Normal,0.8993,Normal
+948de4fc66f64ea49ce381888f8d8126_Mixed_Data_256.jpg,Normal,0.9997,Normal,0.8423,Normal,0.9997,Normal
+6d54b9219d3e4573a1c5086dbbb7c5ed_Mixed_Data_263.jpg,Normal,0.9980,Lung Opacity,0.9305,Normal,0.9980,Normal
+83986a4b2a86487e881bc1a1eca842c3_Mixed_Data_271.jpg,Normal,0.9998,Lung Opacity,0.8562,Normal,0.9998,Normal
+e56b479f902e4c70ad2f0792535ac231_Mixed_Data_28.jpg,Normal,0.9500,Lung Opacity,0.7137,Normal,0.9500,Normal
+ce6e43e0d0e84a23a9912f9e84a96647_Mixed_Data_280.jpg,Normal,0.9897,Lung Opacity,0.9560,Normal,0.9897,Normal
+23126fb02b9b4763965818f5662a2808_Mixed_Data_287.jpg,Normal,1.0000,Lung Opacity,0.5814,Normal,1.0000,Normal
+8f6160433dbe44e09fae88235e484194_Mixed_Data_306.jpg,Normal,1.0000,Lung Opacity,0.5383,Normal,1.0000,Normal
+46956ca0eded4841a8031a18db178609_Mixed_Data_323.jpg,Normal,0.9965,Lung Opacity,0.8469,Normal,0.9965,Normal
+46b182eed11646b1a852ee0b9ebb9e7f_Mixed_Data_330.jpg,Normal,0.9878,Lung Opacity,0.8319,Normal,0.9878,Normal
+687e65606090434998ea4cde4c53c396_Mixed_Data_347.jpg,Normal,0.9858,Lung Opacity,0.9403,Normal,0.9858,Normal
+8e7d7b882afd498286858ea8aab97f7f_Mixed_Data_351.jpg,Normal,0.9657,Lung Opacity,0.7311,Normal,0.9657,Normal
+9c873607c99a46e29a2b51b47ab461f9_Mixed_Data_367.jpg,Normal,0.6689,Lung Opacity,0.6377,Normal,0.6689,Normal
+07e596259e22446d8dc0f08860d6ab11_Mixed_Data_37.jpg,Normal,0.9975,Lung Opacity,0.9637,Normal,0.9975,Normal
+3ff348f4a3694e4cb927f737b3bbe45a_Mixed_Data_404.jpg,Normal,0.9988,Lung Opacity,0.9799,Normal,0.9988,Normal
+f6ed45b81aaf4a3c86e6e593fc8b9e15_Mixed_Data_431.jpg,Normal,0.9995,Lung Opacity,0.6259,Normal,0.9995,Normal
+6ecd67a1e57142898cf97b78003745f5_Mixed_Data_44.jpg,Normal,0.9999,Normal,0.6820,Normal,0.9999,Normal
+76c3e19e45544c71a62b4fc09c2cd178_Mixed_Data_441.jpg,Normal,0.9811,Lung Opacity,0.7395,Normal,0.9811,Normal
+d1d70b539d8a4c6a8f9d57d2b8def268_Mixed_Data_454.jpg,Normal,0.9865,Lung Opacity,0.9709,Normal,0.9865,Normal
+1687a22fcef4456985d8712da39a5be0_Mixed_Data_48.jpg,Normal,1.0000,Normal,0.9076,Normal,1.0000,Normal
+46badca0cb7b4f9a922a08af250ce29c_Mixed_Data_492.jpg,Normal,0.9988,Lung Opacity,0.5187,Normal,0.9988,Normal
+bcc78951fc894220b7f89b3c4b6a83ac_Mixed_Data_526.jpg,Normal,0.9998,Lung Opacity,0.6180,Normal,0.9998,Normal
+3703776bb15d44518ac6af824dc5d7d9_Mixed_Data_536.jpg,Normal,0.6690,Lung Opacity,0.5313,Normal,0.6690,Normal
+291743c43ceb4f8eb8e8091f9e885ece_Mixed_Data_537.jpg,Normal,0.9994,Normal,0.6169,Normal,0.9994,Normal
+76b0923342764758b47e0a2ef97f6649_Mixed_Data_572.jpg,Normal,0.9999,Normal,0.7224,Normal,0.9999,Normal
+9d380f3656a947879ce27defa4639b55_Mixed_Data_574.jpg,Normal,0.9950,Normal,0.9895,Normal,0.9950,Normal
+3ce1830d880749edbb937af3a42a1017_Mixed_Data_577.jpg,Normal,0.9837,Lung Opacity,0.7006,Normal,0.9837,Normal
+415eb21252644d22ae8b54204feb4456_Mixed_Data_587.jpg,Normal,0.9800,Lung Opacity,0.9578,Normal,0.9800,Normal
+53d75762c43d49e980e5c6d72a1caf96_Mixed_Data_59.jpg,Normal,0.9880,Lung Opacity,0.5206,Normal,0.9880,Normal
+b6b3d395042f493e95c8ff487e5554da_Mixed_Data_590.jpg,Normal,0.9974,Lung Opacity,0.8794,Normal,0.9974,Normal
+1ae6a514418d445c953a58af609ec8f4_Mixed_Data_600.jpg,Normal,0.9986,Lung Opacity,0.9115,Normal,0.9986,Normal
+ec572fe326c74eb2b8ea065adb938ff1_Mixed_Data_610.jpg,Normal,0.9864,Lung Opacity,0.9646,Normal,0.9864,Normal
+6284b9c03cce4105932fb5da80a9efe2_Mixed_Data_615.jpg,Normal,0.5408,Normal,0.9769,Normal,0.9769,Normal
+e9e7b940896f42b98f4683d922a4a325_Mixed_Data_62.jpg,Normal,1.0000,Normal,0.9685,Normal,1.0000,Normal
+960fff84dc644523ac0a72801e60d905_Mixed_Data_620.jpg,Normal,0.9170,Lung Opacity,0.7592,Normal,0.9170,Normal
+68593f452ebf47c4be734a9b4b97ee10_Mixed_Data_622.jpg,Normal,0.9921,Lung Opacity,0.9034,Normal,0.9921,Normal
+04a289eab17949518720412ee73b5b3d_Mixed_Data_63.jpg,Normal,0.9998,Normal,0.7039,Normal,0.9998,Normal
+a40f2bca787a4ce1a06c352aba5a6905_Mixed_Data_67.jpg,Normal,0.9653,Lung Opacity,0.9607,Normal,0.9653,Normal
+5920c2a6144f45049b721589813ba6b7_Mixed_Data_671.jpg,Normal,0.6016,Normal,0.8213,Normal,0.8213,Normal
+cc3f793fba19428b9bc6f555cfced585_Mixed_Data_675.jpg,Normal,0.9924,Lung Opacity,0.9334,Normal,0.9924,Normal
+0d92e699d17c4cb6acde63ccf7848f0f_Mixed_Data_686.jpg,Normal,0.9276,Normal,0.7478,Normal,0.9276,Normal
+3e439b205a4c4362837e1bd6e2fbf8cf_Mixed_Data_7.jpg,Normal,0.9998,Lung Opacity,0.6061,Normal,0.9998,Normal
+acc76e81cc19497aad635b1425a87ccc_Mixed_Data_713.jpg,Normal,0.9841,Lung Opacity,0.9563,Normal,0.9841,Normal
+940d6641fc7944a980a8bba731cb3375_Mixed_Data_716.jpg,Pneumonia,0.8032,Normal,0.8493,Normal,0.8493,Normal
+ad62a9db7fae474f931bd5090c50af15_Mixed_Data_723.jpg,Normal,0.9959,Normal,0.8303,Normal,0.9959,Normal
+63465d9fe5104f25a9d8ec431a03be8d_Mixed_Data_735.jpg,Normal,0.9001,Lung Opacity,0.6579,Normal,0.9001,Normal
+0ed877dcdf144d01a6f0ae11563599df_Mixed_Data_742.jpg,Normal,0.9991,Lung Opacity,0.5795,Normal,0.9991,Normal
+23b2d40d00e241b29fadf48e8dd502fb_Mixed_Data_744.jpg,Normal,0.9949,Lung Opacity,0.8496,Normal,0.9949,Normal
+b5963e79ffd749129a83a153a6c5be5c_Mixed_Data_749.jpg,Normal,1.0000,Lung Opacity,0.9749,Normal,1.0000,Normal
+0f86bae8022b4a789411d181064bab52_Mixed_Data_753.jpg,Normal,0.9924,Lung Opacity,0.8688,Normal,0.9924,Normal
+9f0a6cc914a14d6484c0541789851a3c_Mixed_Data_757.jpg,Normal,0.9996,Normal,0.8881,Normal,0.9996,Normal
+1dd5b3ceb4034aa888e3981ce7b3c082_Mixed_Data_76.jpg,Normal,1.0000,Normal,0.9489,Normal,1.0000,Normal
+248403a281964961a672457d03fdd8f9_Mixed_Data_761.jpg,Normal,0.9984,Lung Opacity,0.9774,Normal,0.9984,Normal
+2a08d9819b8e4b80a614449a62a00385_Mixed_Data_765.jpg,Normal,0.9955,Lung Opacity,0.9763,Normal,0.9955,Normal
+9a45887ae28b4414850dfa95968fb9fa_Mixed_Data_78.jpg,Normal,0.7536,Lung Opacity,0.6694,Normal,0.7536,Normal
+66e417e593744abc8fc102c6ec465528_Mixed_Data_789.jpg,Normal,1.0000,Normal,0.9447,Normal,1.0000,Normal
+77bb3dab0c2f436a8ee5a1948e8d15cd_Mixed_Data_796.jpg,Normal,0.9940,Lung Opacity,0.7578,Normal,0.9940,Normal
+e13aca438b8849f6b481f51e084f44ce_Mixed_Data_797.jpg,Normal,0.9986,Lung Opacity,0.5685,Normal,0.9986,Normal
+424405bf345a4a9e95b57eced845f4ba_Mixed_Data_802.jpg,Normal,0.9908,Normal,0.5278,Normal,0.9908,Normal
+c2cc6c74b0dc410f8bb4d81ddbdfc722_Mixed_Data_809.jpg,Normal,0.9983,Lung Opacity,0.8163,Normal,0.9983,Normal
+bfa9668860a6424e97e3fbf838c981c9_Mixed_Data_815.jpg,Normal,0.9076,Lung Opacity,0.6822,Normal,0.9076,Normal
+29fdeb9a4ac346c49ebce2beeaa2817c_Mixed_Data_817.jpg,Normal,1.0000,Normal,0.9342,Normal,1.0000,Normal
+348469c91b564a018e5e27647d3152a2_Mixed_Data_822.jpg,Normal,1.0000,Normal,0.8612,Normal,1.0000,Normal
+c93baa28946543159bae551022cad6dd_Mixed_Data_827.jpg,Normal,0.9827,Lung Opacity,0.8683,Normal,0.9827,Normal
+3a4d824e8747453b8f6cb199546a71f5_Mixed_Data_831.jpg,Normal,0.9353,Lung Opacity,0.9289,Normal,0.9353,Normal
+ce46f072f1524232876a3fe4dbba030c_Mixed_Data_832.jpg,Normal,0.9916,Lung Opacity,0.6788,Normal,0.9916,Normal
+bc76d8f8045146b181ad1698e4dc07e4_Mixed_Data_833.jpg,Normal,0.9999,Normal,0.9480,Normal,0.9999,Normal
+6239876b41684e53a41c0f5d3ad98636_Mixed_Data_839.jpg,Normal,0.9987,Normal,0.9236,Normal,0.9987,Normal
+9952cb3ee7c34bf1b814eaddb1f5fd96_Mixed_Data_840.jpg,Normal,1.0000,Normal,0.9913,Normal,1.0000,Normal
+79544c98761b4174a359e26bbff67e26_Mixed_Data_841.jpg,Normal,1.0000,Lung Opacity,0.5391,Normal,1.0000,Normal
+ec3568035c574c39ae7b1350f6330501_Mixed_Data_842.jpg,Normal,0.9966,Lung Opacity,0.7492,Normal,0.9966,Normal
+51801236837843558dfcaf95ee1867a2_Mixed_Data_845.jpg,Normal,0.9999,Lung Opacity,0.7325,Normal,0.9999,Normal
+5ad5ee72f26147d39430a975adc6329f_Mixed_Data_85.jpg,Normal,0.9964,Lung Opacity,0.9380,Normal,0.9964,Normal
+9ad5ef7bb24543768191cc9b1d005bd0_Mixed_Data_851.jpg,Normal,0.9958,Normal,0.9566,Normal,0.9958,Normal
+8f695ccc9f0b44eeb39370f342a928ae_Mixed_Data_863.jpg,Normal,0.9893,Lung Opacity,0.9254,Normal,0.9893,Normal
+755c65d28e574ed9bbfd85cc2da0dd85_Mixed_Data_869.jpg,Normal,0.9940,Lung Opacity,0.5025,Normal,0.9940,Normal
+cc25f64f2bfa484d829e5dd5f9aea792_Mixed_Data_87.jpg,Normal,1.0000,Normal,0.9748,Normal,1.0000,Normal
+fba032fb544743d38c969ed996050861_Mixed_Data_870.jpg,Normal,0.9999,Lung Opacity,0.9733,Normal,0.9999,Normal
+30e6445a2eaa4dd9a5bcb69f9b9e60ce_Mixed_Data_871.jpg,Normal,0.7769,Lung Opacity,0.5035,Normal,0.7769,Normal
+7b3746ae5aac47dfbe5fa44f56a91a91_Mixed_Data_875.jpg,Normal,1.0000,Normal,0.6344,Normal,1.0000,Normal
+6e09a5a9d6de427ba97f33f61a453fc8_Mixed_Data_876.jpg,Normal,0.9894,Lung Opacity,0.9273,Normal,0.9894,Normal
+4ee6427d2b2b4673a960d377c45a1c5a_Mixed_Data_880.jpg,Normal,0.9998,Normal,0.5523,Normal,0.9998,Normal
+90adf6e99f1742fb9753086c11430025_Mixed_Data_881.jpg,Normal,0.9999,Normal,0.9305,Normal,0.9999,Normal
+e1cdad518d1c40c1b95269e67bf50439_Mixed_Data_882.jpg,Normal,0.9953,Lung Opacity,0.6951,Normal,0.9953,Normal
+c2428e45b44f410b92eaa5b2991e00ab_Mixed_Data_887.jpg,Normal,0.9817,Lung Opacity,0.9613,Normal,0.9817,Normal
+ed5a7b04d5f440749bd6353137ea8d99_Mixed_Data_891.jpg,Normal,0.9998,Lung Opacity,0.9834,Normal,0.9998,Normal
+b2e541488ee1494d949f5c278bd97e72_Mixed_Data_894.jpg,Normal,0.9419,Lung Opacity,0.6488,Normal,0.9419,Normal
+5b754a116483415cafc38cfe05fe5d96_Mixed_Data_897.jpg,Normal,1.0000,Normal,0.6684,Normal,1.0000,Normal
+8dc79e08a696417db855383905b5a885_Mixed_Data_898.jpg,Normal,0.9742,Lung Opacity,0.9715,Normal,0.9742,Normal
+6ecdc02876b34d4cbfc0942813ea31ae_Mixed_Data_899.jpg,Normal,0.9751,Lung Opacity,0.8723,Normal,0.9751,Normal
+39f25c1401d14addb6291dd8d2f83c30_Mixed_Data_902.jpg,Normal,1.0000,Normal,0.9380,Normal,1.0000,Normal
+a191bdbd72b748aebfbebf6fd14acb02_Mixed_Data_903.jpg,Normal,0.9924,Normal,0.6798,Normal,0.9924,Normal
+dff263f5a67d47d091ea4038deeecce4_Mixed_Data_905.jpg,Normal,0.9816,Lung Opacity,0.9663,Normal,0.9816,Normal
+65b8fa99e029476399822734b5f43269_Mixed_Data_913.jpg,Normal,0.9998,Lung Opacity,0.8427,Normal,0.9998,Normal
+3012565c70364c00b6655fb23a438544_Mixed_Data_934.jpg,Normal,0.9650,Lung Opacity,0.7996,Normal,0.9650,Normal
+669ebfced7764236aae6950e31c5b4af_Mixed_Data_943.jpg,Normal,0.9999,Normal,0.6669,Normal,0.9999,Normal
+4886ef26a7ad440d89b043e87dc491f1_Mixed_Data_949.jpg,Normal,0.9930,Lung Opacity,0.9298,Normal,0.9930,Normal
+6d427f5cc06748d487ed9b4107686a35_Mixed_Data_952.jpg,Normal,0.9961,Normal,0.8143,Normal,0.9961,Normal
+884cc9294e16446a80d16ce6eec4b875_Mixed_Data_962.jpg,Normal,0.9947,Lung Opacity,0.9619,Normal,0.9947,Normal
+73445d17b6d54ecb8a9ac6d02197704c_Mixed_Data_97.jpg,Normal,0.9975,Normal,0.6208,Normal,0.9975,Normal
+5c268eecf3bb40c6a804598eddadb9ce_Mixed_Data_972.jpg,Normal,0.9986,Normal,0.9095,Normal,0.9986,Normal
+8e603f06394a47dd89810d46bb8ed29a_Mixed_Data_977.jpg,Normal,0.9999,Normal,0.7887,Normal,0.9999,Normal
+7c4a7d8ad24141bb9ad71743fd7d32f2_Mixed_Data_985.jpg,Normal,0.9996,Lung Opacity,0.9048,Normal,0.9996,Normal
+9818b3fc56c84d43b2d7127bf34be8b3_Mixed_Data_987.jpg,Normal,1.0000,Normal,0.9229,Normal,1.0000,Normal
+ad342025cae04443ac478b3f9a25e495_Mixed_Data_995.jpg,Normal,1.0000,Normal,0.9193,Normal,1.0000,Normal
+383fd5df664d451f82bdfbb58dde49de_Mixed_Data_997.jpg,Normal,0.9986,Normal,0.9240,Normal,0.9986,Normal

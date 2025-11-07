@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single X-ray Analysis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #232946 0%, #0a192f 100%);
+            font-family: 'Segoe UI', sans-serif;
+            color: #ccd6f6;
+            transition: background 0.5s ease;
+        }
+        .navbar {
+            background-color: #112240;
+            padding: 10px 20px;
+            box-shadow: 0 2px 16px rgba(0,0,10,0.45);
+            border-radius: 0 0 14px 14px;
+            animation: slideDown 1s;
+        }
+        .navbar img {
+            width: 70px;
+            border-radius: 50%;
+            border: 2px solid #00bcd4;
+        }
+        .container {
+            margin-top: 60px;
+            min-height: 70vh;
+            animation: fadeInUp 1s;
+        }
+        .card {
+            background: rgba(17,34,64,0.96);
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 4px 16px #0005;
+            border: 1px solid #305081;
+        }
+        h1 {
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 1px 2px 4px #00bcd4aa;
+        }
+        .upload-area {
+            border: 2.5px dashed #298ca9;
+            border-radius: 18px;
+            padding: 26px;
+            text-align: center;
+            cursor: pointer;
+            transition: background 0.3s, border-color 0.3s;
+            background: rgba(22,32,61,0.92);
+        }
+        .upload-area:hover {
+            background: #1f4068cc;
+            border-color: #00bcd4;
+        }
+        .upload-icon {
+            font-size: 2.8rem;
+            color: #00bcd4;
+            margin-bottom: 15px;
+            animation: floatIcon 1.5s infinite alternate;
+        }
+        .upload-instructions {
+            font-size: 1.05rem;
+            color: #7f98b6;
+        }
+        .file-input { display: none; }
+        .btn-custom {
+            background: linear-gradient(90deg, #00bcd4 30%, #0097a7 90%);
+            color: #0a192f;
+            font-weight: bold;
+            padding: 11px 30px;
+            border: none;
+            border-radius: 28px;
+            box-shadow: 0 0 5px #00bcd4cc;
+            transition: all 0.3s;
+        }
+        .btn-custom:hover {
+            transform: scale(1.07);
+            background: linear-gradient(90deg, #0097a7 30%, #00bcd4 90%);
+        }
+        @keyframes slideDown { from{opacity:0;transform:translateY(-40px);} to{opacity:1;transform:translateY(0);} }
+        @keyframes fadeInUp { from{opacity:0;transform:translateY(40px);} to{opacity:1;transform:translateY(0);} }
+        @keyframes floatIcon { to{transform:translateY(-8px);} }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <a class="navbar-brand" href="/">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/4c4afc19-b52b-4a44-86e9-abd1c281937e.png" alt="Logo">
+    </a>
+</nav>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card text-center">
+                <h1>Upload Single Chest X-ray</h1>
+                <form action="/upload_single" method="post" enctype="multipart/form-data" id="single-form">
+                    <div class="upload-area" id="upload-area" onclick="document.getElementById('file-input').click()">
+                        <div class="upload-icon"><i class="fas fa-x-ray"></i></div>
+                        <div class="upload-instructions">
+                            Click or drag a single X-ray image (PNG, JPG, JPEG)
+                        </div>
+                    </div>
+                    <input type="file" id="file-input" name="image" class="file-input" accept=".png, .jpg, .jpeg" required>
+                    <p id="selected-file" style="display:none; margin-top:15px; color:#00bcd4; font-weight:bold;"></p>
+
+                    <div class="text-center" style="margin-top: 25px;">
+                        <button type="submit" class="btn btn-custom btn-lg shadow-none">
+                            <i class="fas fa-microscope"></i> Analyze Image
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const fileInput = document.getElementById('file-input');
+    fileInput.addEventListener('change', function() {
+        if (fileInput.files.length > 0) {
+            document.getElementById('selected-file').textContent = "Selected: " + fileInput.files[0].name;
+            document.getElementById('selected-file').style.display = 'block';
+        }
+    });
+</script>
+</body>
+</html>

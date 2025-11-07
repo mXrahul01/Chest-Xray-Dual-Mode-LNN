@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analyzing X-ray Images</title>
+    <!-- Bootstrap & FontAwesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            background: linear-gradient(135deg, #1f4068 0%, #0a192f 100%);
+            background: radial-gradient(circle at 20% 20%, #1f4068 5%, #0a192f 90%);
             font-family: 'Segoe UI', 'Arial', sans-serif;
             color: #ccd6f6;
             min-height: 100vh;
             margin: 0;
+            overflow-x: hidden;
         }
         .navbar {
             background-color: #112240;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+            border-bottom: 2px solid #00bcd4;
         }
         .navbar-brand img {
             width: 90px;
@@ -24,79 +28,151 @@
         .navbar-brand img:hover {
             transform: scale(1.1) rotate(-5deg);
         }
+
         .card {
-            background: rgba(17,34,64,0.9);
-            border-radius: 18px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.33);
-            border: 1px solid #223d67;
-            padding: 40px 35px;
+            background: rgba(17, 34, 64, 0.92);
+            border-radius: 20px;
+            border: 1px solid #1f4068;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            padding: 45px 35px;
+            text-align: center;
+            animation: fadeIn 1.4s ease-in-out;
         }
+
+        h1.card-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #00bcd4;
+            letter-spacing: 1px;
+            margin-bottom: 1.2em;
+            text-shadow: 0 2px 8px #00bcd444;
+        }
+
+        /* SVG Wave Loader */
         .loadwave {
             display: block;
-            margin: 20px auto 32px auto;
-            width: 90px;
-            height: 90px;
+            margin: 30px auto 28px auto;
+            width: 100px;
+            height: 100px;
         }
         .loadwave circle {
             stroke: #00bcd4;
             stroke-width: 8;
             fill: none;
             stroke-dasharray: 210;
-            stroke-dashoffset: 150;
-            animation: loadingwave 1.3s infinite linear;
+            stroke-dashoffset: 210;
+            transform-origin: center;
+            animation: spinWave 1.6s ease-in-out infinite;
         }
-        @keyframes loadingwave {
-            0%   { stroke-dashoffset: 210; }
-            50%  { stroke-dashoffset: 60; }
-            100% { stroke-dashoffset: 210; }
+        @keyframes spinWave {
+            0% { stroke-dashoffset: 210; transform: rotate(0deg); opacity: 0.8; }
+            50% { stroke-dashoffset: 60; transform: rotate(180deg); opacity: 1; }
+            100% { stroke-dashoffset: 210; transform: rotate(360deg); opacity: 0.8; }
         }
-        .card-title {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 0.7em;
-            letter-spacing: 1px;
+
+        /* Progress simulation bar */
+        .progress-container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #223d67;
+            border-radius: 10px;
+            height: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 12px rgba(0,188,212,0.25);
         }
+        .progress-bar {
+            width: 0;
+            height: 100%;
+            background: linear-gradient(90deg, #00bcd4, #0097a7);
+            border-radius: 10px;
+            animation: progressAnim 7s ease-in-out forwards;
+        }
+        @keyframes progressAnim {
+            0% { width: 0%; }
+            30% { width: 35%; }
+            60% { width: 70%; }
+            100% { width: 100%; }
+        }
+
         .loading-description {
-            font-size: 1.18rem;
+            font-size: 1.1rem;
             color: #6ee0f6;
-            margin-top: 18px;
+            margin-top: 15px;
+            letter-spacing: 0.4px;
+            line-height: 1.6;
+            animation: fadeInText 2s ease-in;
         }
+
+        .loading-subtext {
+            font-size: 0.9rem;
+            color: #7f98b6;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 35px;
+            font-size: 0.88rem;
+            color: #5f87a2;
+            opacity: 0.7;
+        }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(25px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInText { from { opacity: 0; } to { opacity: 1; } }
+
         @media (max-width: 768px) {
-            .card {padding: 22px 10px;}
-            .card-title {font-size: 1.3rem;}
+            .card { padding: 25px 15px; }
+            h1.card-title { font-size: 1.5rem; }
+            .loadwave { width: 75px; height: 75px; }
         }
     </style>
 </head>
 <body>
 <nav class="navbar navbar-expand navbar-dark">
     <a class="navbar-brand" href="/">
-        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/4c4afc19-b52b-4a44-86e9-abd1c281937e.png" alt="Logo" style="height:52px;">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/4c4afc19-b52b-4a44-86e9-abd1c281937e.png" alt="Logo">
     </a>
 </nav>
+
 <div class="container">
     <div class="row justify-content-center align-items-center" style="min-height: 85vh;">
         <div class="col-md-8">
-            <div class="card text-center">
+            <div class="card">
                 <h1 class="card-title">Analyzing X-ray Images</h1>
+
                 <!-- Animated loading SVG -->
                 <svg class="loadwave" viewBox="0 0 90 90">
                     <circle cx="45" cy="45" r="32" />
                 </svg>
+
+                <!-- Progress bar (simulated for longer tasks) -->
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+
                 <div class="loading-description">
-                        <span>
-                            <strong>Please wait</strong> while we process your images.<br>
-                            This may take a few seconds…
-                        </span>
+                    <strong>Processing in progress...</strong><br>
+                    Our AI models are detecting pneumonia & lung opacity indicators.<br>
+                    Please wait while results are being prepared.
+                </div>
+
+                <div class="loading-subtext">
+                    <i class="fas fa-info-circle"></i> This may take a few seconds depending on the number of uploaded images.
                 </div>
             </div>
+
+            <footer>Smart Chest X-ray Diagnosis System © 2025</footer>
         </div>
     </div>
 </div>
-<!-- Automatic JavaScript redirect after 5 sec -->
+
+<!-- Auto redirect -->
 <script>
+    // Automatically redirect after 7 seconds
     setTimeout(function() {
-        window.location.href = "{{ url_for('result') }}";
-    }, 5000);
+        window.location.href = "{{ url_for('result_bulk') }}";
+    }, 7000);
 </script>
 </body>
 </html>
